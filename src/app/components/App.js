@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "../styles/app.less";
 import { Route, BrowserRouter, Switch,Link } from "react-router-dom";
 import Home from "./Home";
+import Calculator from"./Calculator"
+import Timer from "./Timer"
 
 
 class App extends Component {
@@ -30,8 +32,8 @@ class App extends Component {
           </div>
           <Switch>
             <Route exact path='/' component={Home}/>
-            {/* <Route path='/calculator' component={Calculator}/>
-            <Route exact path='/timer' component={Timer}/> */}
+            <Route path='/calculator' component={Calculator}/>
+            <Route exact path='/timer' component={Timer}/>
             <Route  component={Home}/>
           </Switch>
         </BrowserRouter>
