@@ -20,7 +20,7 @@ export default class Calculator extends Component {
   handleCalculate = () => {
     const regex = /\d+[\+\-\*]\d+/;
     if (this.state.calculates.replace(regex, "").length !== 0) {
-      this.handleReset;
+      this.handleReset();
     } else {
       this.setState({
         calculates: eval(this.state.calculates),
