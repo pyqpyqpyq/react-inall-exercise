@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import "./app.less";
-import { Route, BrowserRouter, Switch } from "react-router-dom";
+import "../styles/app.less";
+import { Route, BrowserRouter, Switch,Link } from "react-router-dom";
 import Home from "./Home";
+
 
 class App extends Component {
   render() {
@@ -29,8 +30,8 @@ class App extends Component {
           </div>
           <Switch>
             <Route exact path='/' component={Home}/>
-            <Route path='/calculator' component={Calculator}/>
-            <Route exact path='/timer' component={Timer}/>
+            {/* <Route path='/calculator' component={Calculator}/>
+            <Route exact path='/timer' component={Timer}/> */}
             <Route  component={Home}/>
           </Switch>
         </BrowserRouter>
